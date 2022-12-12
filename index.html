@@ -10,10 +10,24 @@
 <body>
     <div style="text-align:center">   
         <h1 class="text-6xl font-bold"> UEA Estates</h1>
+        <p class = "text-2xl">Welcome to the report a problem page. Simply click the report a problem button below and fill out the form to report the problem you are experiencing.</p>
+        <div style="position:relative; top:160px">
+            <label for="my-modal-6" class="btn">Report a problem</label>
+        </div>
+        
     </div>
-    <div>
-        <p>My first paragraph.</p>
-        <button class="btn btn-primary">Primary</button> 
+    <input type="checkbox" id="my-modal-6" class="modal-toggle" />
+    <div class="modal modal-bottom sm:modal-middle">
+    <div class="modal-box">
+    <h3 class="font-bold text-lg">Report a problem</h3>
+    <input type="text" placeholder="Describe your problem" class="input input-bordered w-full max-w-xs" />
+    <p class="py-4">Please note the severity of the problem will dictate how long before action is taken.</p>
+    <div class="modal-action">
+      <label for="my-modal-6" class="btn">Send!</label>
     </div>
+    </div>
+    </div>
+    
+
 </body>
 </html>

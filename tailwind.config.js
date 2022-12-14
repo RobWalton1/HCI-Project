@@ -2,7 +2,10 @@
 module.exports = {
   content: ["./*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {backgroundImage: {
+      'hero': "url('UEA.jpg')",
+    }
+  },
   },
   plugins: [require("daisyui")],
 }

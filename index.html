@@ -7,33 +7,31 @@
     <link rel="stylesheet" href="css/style.css">
 
 </head> 
-<body>
-    <div style="text-align:center">   
-        <h1 class="text-6xl font-bold"> UEA Estates</h1>
-        <p class = "text-2xl">Welcome to the report a problem page. Simply click the report a problem button below and fill out the form to report the problem you are experiencing.</p>
-        <div style="position:relative; top:160px">
-            <label for="my-modal-6" class="btn">Report a problem</label>
+<body class = "bg-hero min-h-screen bg-cover bg-no-repeat">
+  <div class="hero min-h-screen">
+    <div class="hero-content flex-col lg:flex-row  backdrop-blur-2xl">
+      <img src="estates.jpg" class="max-w-sm rounded-lg shadow-2xl" />
+      <div>
+        <h1 class="bold text-5xl font-bold ">Issues in your bedroom, teaching room or around campus?</h1>
+        <p class="py-6">Get in touch and we'll help.</p>
+        <label for="my-modal-6" class="btn">Report a problem</label>
+        <input type="checkbox" id="my-modal-6" class="modal-toggle" />
+        <div class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+        <h3 class="font-bold text-lg">Report a problem</h3>
+        <input type="text" placeholder="Where is the problem?" class="input input-bordered w-full max-w-xs" />
+        <textarea class="textarea textarea-bordered" placeholder="Describe the problem"></textarea>
+        <h4>Upload a photo of the problem</h4>
+        <input type="file" class="file-input w-full max-w-xs" />
+        <p class="py-4">Please note the severity of the problem will dictate how long before action is taken.</p>
+        <div class="modal-action">
+          <label for="my-modal-6" class="btn">Send!</label>
         </div>
-        
-    </div>
-    <input type="checkbox" id="my-modal-6" class="modal-toggle" />
-    <div class="modal modal-bottom sm:modal-middle">
-    <div class="modal-box">
-    <h3 class="font-bold text-lg">Report a problem</h3>
-    <input type="text" placeholder="Where is the problem?" class="input input-bordered w-full max-w-xs" />
-    <textarea class="textarea textarea-bordered" placeholder="Describe the problem"></textarea>
-    <p class="py-4">Please note the severity of the problem will dictate how long before action is taken.</p>
-    <div class="modal-action">
-      <label for="my-modal-6" class="btn">Send!</label>
-    </div>
-    </div>
-    </div>
-    <div class="alert alert-info shadow-lg">
-        <div>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-current flex-shrink-0 w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-          <span>New software update available.</span>
+        </div>
         </div>
       </div>
+    </div>
+  </div>
 
 </body>
 

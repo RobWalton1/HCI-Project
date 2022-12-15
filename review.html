@@ -5,27 +5,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-
 </head> 
 <body class = "bg-hero min-h-screen bg-cover bg-no-repeat">
-    <div style="text-align:center">   
-        <h1 class="text-6xl font-bold"> UEA Estates</h1>
-        <p class = "text-2xl">Welcome to the report a problem page. Simply click the report a problem button below and fill out the form to report the problem you are experiencing.</p>
-    </div>
-
+  <div class="hero min-h-screen">
+    <div class="hero-content flex-col lg:flex-row  backdrop-blur-2xl ">
     <div class="overflow-x-auto w-full">
         <table class="table w-full">
           <!-- head -->
           <thead>
             <tr>
-              <th>
-                <label>
-                  <input type="checkbox" class="checkbox" />
-                </label>
-              </th>
-              <th>Name</th>
+              <th>Completed</th>
               <th>Job</th>
-              <th>Favorite Color</th>
+              <th>Location</th>
+              <th>Priority</th>
               <th></th>
             </tr>
           </thead>
@@ -41,23 +33,41 @@
                 <div class="flex items-center space-x-3">
                   <div class="avatar">
                     <div class="mask mask-squircle w-12 h-12">
-                      <img src="/tailwind-css-component-profile-2@56w.png" alt="Avatar Tailwind CSS Component" />
+                      
                     </div>
                   </div>
                   <div>
-                    <div class="font-bold">Hart Hagerty</div>
-                    <div class="text-sm opacity-50">United States</div>
+                    <div class="font-bold">Broken radiator</div>
+                    
                   </div>
                 </div>
               </td>
               <td>
-                Zemlak, Daniel and Leannon
+                2.27 Sci lab
                 <br/>
-                <span class="badge badge-ghost badge-sm">Desktop Support Technician</span>
+                
               </td>
-              <td>Purple</td>
+              <td class = color: red>Critical</td>
               <th>
-                <button class="btn btn-ghost btn-xs">details</button>
+                <!-- The button to open modal -->
+<label for="my-modal" class="btn">Request Help</label>
+
+<!-- Put this part before </body> tag -->
+<input type="checkbox" id="my-modal" class="modal-toggle" />
+<div class="modal">
+  <div class="modal-box">
+    <h4>Do you require supervision?</h4>
+    <div class="btn-group">
+      <input type="radio" name="options" data-title="Yes" class="btn" />
+      <input type="radio" name="options" data-title="No" class="btn" />
+    </div>
+    <h4>Please input additional parts needed below:</h4>
+    <input type="text" placeholder="Enter text..." class="input input-bordered w-full max-w-xs" />
+    <div class="modal-action">
+      <label for="my-modal" class="btn">Send!</label>
+    </div>
+  </div>
+</div>
               </th>
             </tr>
             <!-- row 2 -->
@@ -71,23 +81,41 @@
                 <div class="flex items-center space-x-3">
                   <div class="avatar">
                     <div class="mask mask-squircle w-12 h-12">
-                      <img src="/tailwind-css-component-profile-3@56w.png" alt="Avatar Tailwind CSS Component" />
+                      
                     </div>
                   </div>
                   <div>
-                    <div class="font-bold">Brice Swyre</div>
-                    <div class="text-sm opacity-50">China</div>
+                    <div class="font-bold">Lecture theater door stuck.</div>
+                    
                   </div>
                 </div>
               </td>
               <td>
-                Carroll Group
+                2.27 Sci lab
                 <br/>
-                <span class="badge badge-ghost badge-sm">Tax Accountant</span>
+                
               </td>
-              <td>Red</td>
+              <td>16/12/22</td>
               <th>
-                <button class="btn btn-ghost btn-xs">details</button>
+                <!-- The button to open modal -->
+<label for="my-modal" class="btn">Request Help</label>
+
+<!-- Put this part before </body> tag -->
+<input type="checkbox" id="my-modal" class="modal-toggle" />
+<div class="modal">
+  <div class="modal-box">
+    <h4>Do you require supervision?</h4>
+    <div class="btn-group">
+      <input type="radio" name="options" data-title="Yes" class="btn" />
+      <input type="radio" name="options" data-title="No" class="btn" />
+    </div>
+    <h4>Please input additional parts needed below:</h4>
+    <input type="text" placeholder="Enter text..." class="input input-bordered w-full max-w-xs" />
+    <div class="modal-action">
+      <label for="my-modal" class="btn">Send!</label>
+    </div>
+  </div>
+</div>
               </th>
             </tr>
             <!-- row 3 -->
@@ -101,23 +129,41 @@
                 <div class="flex items-center space-x-3">
                   <div class="avatar">
                     <div class="mask mask-squircle w-12 h-12">
-                      <img src="/tailwind-css-component-profile-4@56w.png" alt="Avatar Tailwind CSS Component" />
+                      
                     </div>
                   </div>
                   <div>
-                    <div class="font-bold">Marjy Ferencz</div>
-                    <div class="text-sm opacity-50">Russia</div>
+                    <div class="font-bold">Broken radiator</div>
+                    
                   </div>
                 </div>
               </td>
               <td>
-                Rowe-Schoen
+                2.27 Sci lab
                 <br/>
-                <span class="badge badge-ghost badge-sm">Office Assistant I</span>
+                
               </td>
-              <td>Crimson</td>
+              <td>16/12/22</td>
               <th>
-                <button class="btn btn-ghost btn-xs">details</button>
+                <!-- The button to open modal -->
+<label for="my-modal" class="btn">Request Help</label>
+
+<!-- Put this part before </body> tag -->
+<input type="checkbox" id="my-modal" class="modal-toggle" />
+<div class="modal">
+  <div class="modal-box">
+    <h4>Do you require supervision?</h4>
+    <div class="btn-group">
+      <input type="radio" name="options" data-title="Yes" class="btn" />
+      <input type="radio" name="options" data-title="No" class="btn" />
+    </div>
+    <h4>Please input additional parts needed below:</h4>
+    <input type="text" placeholder="Enter text..." class="input input-bordered w-full max-w-xs" />
+    <div class="modal-action">
+      <label for="my-modal" class="btn">Send!</label>
+    </div>
+  </div>
+</div>
               </th>
             </tr>
             <!-- row 4 -->
@@ -131,42 +177,53 @@
                 <div class="flex items-center space-x-3">
                   <div class="avatar">
                     <div class="mask mask-squircle w-12 h-12">
-                      <img src="/tailwind-css-component-profile-5@56w.png" alt="Avatar Tailwind CSS Component" />
+                      
                     </div>
                   </div>
                   <div>
-                    <div class="font-bold">Yancy Tear</div>
-                    <div class="text-sm opacity-50">Brazil</div>
+                    <div class="font-bold">Broken radiator</div>
+                    
                   </div>
                 </div>
               </td>
               <td>
-                Wyman-Ledner
+                2.27 Sci lab
                 <br/>
-                <span class="badge badge-ghost badge-sm">Community Outreach Specialist</span>
+                
               </td>
-              <td>Indigo</td>
+              <td>16/12/22</td>
               <th>
-                <button class="btn btn-ghost btn-xs">details</button>
+                <!-- The button to open modal -->
+<label for="my-modal" class="btn">Request Help</label>
+
+<!-- Put this part before </body> tag -->
+<input type="checkbox" id="my-modal" class="modal-toggle" />
+<div class="modal">
+  <div class="modal-box">
+    <h4>Do you require supervision?</h4>
+    <div class="btn-group">
+      <input type="radio" name="options" data-title="Yes" class="btn" />
+      <input type="radio" name="options" data-title="No" class="btn" />
+    </div>
+    <h4>Please input additional parts needed below:</h4>
+    <input type="text" placeholder="Enter text..." class="input input-bordered w-full max-w-xs" />
+    <div class="modal-action">
+      <label for="my-modal" class="btn">Send!</label>
+    </div>
+  </div>
+</div>
               </th>
             </tr>
-          </tbody>
-          <!-- foot -->
-          <tfoot>
-            <tr>
-              <th></th>
-              <th>Name</th>
-              <th>Job</th>
-              <th>Favorite Color</th>
-              <th></th>
-            </tr>
-          </tfoot>
-          
+
+          </tbody>  
+
         </table>
+
       </div>
 
+    </div>
 
-
+  </div>
 </body>
 
 </html>

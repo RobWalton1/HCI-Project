@@ -9,11 +9,11 @@
 </head> 
 <body class = "bg-hero min-h-screen bg-cover bg-no-repeat">
   <div class="hero min-h-screen">
-    <div class="hero-content flex-col lg:flex-row  backdrop-blur-2xl">
+    <div class="hero-content flex-col lg:flex-row  backdrop-blur-2xl ">
       <img src="Estates.jpg" class="max-w-sm rounded-lg shadow-2xl" />
       <div>
         <h1 class="bold text-5xl font-bold ">Issues in your bedroom, teaching room or around campus?</h1>
-        <p class="py-6">Get in touch and we'll help.</p>
+        <p class="py-6">Get in touch and we'll help. For absolute emergencys please call 01603 59 2121</p>
         <label for="my-modal-6" class="btn">Report a problem</label>
         <input type="checkbox" id="my-modal-6" class="modal-toggle" />
         <div class="modal modal-bottom sm:modal-middle">
@@ -21,9 +21,14 @@
         <h3 class="font-bold text-lg">Report a problem</h3>
         <input type="text" placeholder="Where is the problem?" class="input input-bordered w-full max-w-xs" />
         <textarea class="textarea textarea-bordered" placeholder="Describe the problem"></textarea>
+        <h4>Please select the severity</h4>
+        <div class="btn-group">
+          <input type="radio" name="options" data-title="Critical" class="btn" />
+          <input type="radio" name="options" data-title="Medium" class="btn" />
+          <input type="radio" name="options" data-title="Minor" class="btn" />
+        </div>
         <h4>Upload a photo of the problem</h4>
         <input type="file" class="file-input w-full max-w-xs" />
-        <p class="py-4">Please note the severity of the problem will dictate how long before action is taken.</p>
         <div class="modal-action">
           <label for="my-modal-6" class="btn">Send!</label>
         </div>

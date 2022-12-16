@@ -9,7 +9,7 @@
     <!--Link to js framework-->
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head> 
-<body class = "bg-hero min-h-screen bg-cover bg-no-repeat">
+<body class = "bg-hero min-h-screen bg-cover bg-no-repeat text-white">
   <div class = md:flex>
   <div class="hero min-h-screen">
     <div class="hero-content flex-col lg:flex-row  backdrop-blur-2xl ">
@@ -18,10 +18,10 @@
           <!-- head -->
           <thead>
             <tr>
-              <th>Completed</th>
-              <th>Job</th>
-              <th>Location</th>
-              <th>Priority</th>
+              <th class = text-white>Completed</th>
+              <th class = text-white>Job</th>
+              <th class = text-white>Location</th>
+              <th class = text-white>Priority</th>
               <th></th>
             </tr>
           </thead>
@@ -41,12 +41,12 @@
                     </div>
                   </div>
                   <div>
-                    <div class="font-bold">Broken radiator</div>
+                    <div class="font-bold text-white">Broken radiator</div>
                     
                   </div>
                 </div>
               </td>
-              <td>
+              <td class = text-white>
                 2.27 Sci lab
                 <br/>
                 
@@ -54,18 +54,18 @@
               <td class = text-red-600>Critical</td>
               <th>
                 <!-- The button to open modal -->
-<label for="my-modal" class="btn">Request Help</label>
+<label for="my-modal" class="btn text-white">Request Help</label>
 
 <!-- Put this part before </body> tag -->
 <input type="checkbox" id="my-modal" class="modal-toggle" />
 <div class="modal">
   <div class="modal-box">
-    <h4>Do you require supervision?</h4>
+    <h4 class = text-white>Do you require supervision?</h4>
     <div class="btn-group">
       <input type="radio" name="options" data-title="Yes" class="btn" />
       <input type="radio" name="options" data-title="No" class="btn" />
     </div>
-    <h4>Please input additional parts needed below:</h4>
+    <h4 class = text-white>Please input additional parts needed below:</h4>
     <input type="text" placeholder="Enter text..." class="input input-bordered w-full max-w-xs" />
     <div class="modal-action">
       <div class="modal-action">

@@ -1,2 +1,88 @@
-List of jobs tha need doing on the left
-Alloator on the right
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Allocation page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link to css framework-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Link to js framework-->
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    
+
+</head> 
+<body class = "bg-hero min-h-screen bg-cover bg-no-repeat">
+    <div class="hero min-h-screen">
+        <div class="hero-content flex-col lg:flex-row  backdrop-blur-2xl ">
+            <div class="overflow-x-auto">
+                <table class="table w-full">
+                <h1 class = text-3xl >Jobs Received</h1>
+                  <!-- head -->
+                  <thead>
+                    <tr>
+                      <th>Job ID</th>
+                      <th>Summary</th>
+                      <th>Location</th>
+                      <th>Priority set by reporter</th>
+                      <th>Actual Priority</th>
+                      <th>Select Technician</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- row 1 -->
+                    <tr>
+                      <th>1007</th>
+                      <td>Broken radiator</td>
+                      <td>2.27 </td>
+                      <td class = text-red-600>Critical</td>
+                      <td>
+                        <div class="btn-group">
+                            <input type="radio" name="options" data-title="Critical" class="btn" />
+                            <input type="radio" name="options" data-title="Medium" class="btn" />
+                            <input type="radio" name="options" data-title="Minor" class="btn" />
+                          </div>
+                      </td>
+                      <td>
+                        <div class="btn-group">
+                            <input type="radio" name="options" data-title="Joey" class="btn" />
+                            <input type="radio" name="options" data-title="Dave" class="btn" />
+                            <input type="radio" name="options" data-title="Bary" class="btn" />
+                            <input type="radio" name="options" data-title="Gary" class="btn" />
+                          </div>
+                      </td>
+                    </tr>
+                    <!-- row 2 -->
+                    <tr>
+                        <th>1008</th>
+                        <td>Lecture theater door stuck</td>
+                        <td>2.27 </td>
+                        <td class = text-yellow-500>Medium</td>
+                        <td>
+                          <div class="btn-group">
+                              <input type="radio" name="options" data-title="Critical" class="btn" />
+                              <input type="radio" name="options" data-title="Medium" class="btn" />
+                              <input type="radio" name="options" data-title="Minor" class="btn" />
+                            </div>
+                        </td>
+                        <td>
+                          <div class="btn-group">
+                              <input type="radio" name="options" data-title="Joey" class="btn" />
+                              <input type="radio" name="options" data-title="Dave" class="btn" />
+                              <input type="radio" name="options" data-title="Bary" class="btn" />
+                              <input type="radio" name="options" data-title="Gary" class="btn" />
+                            </div>
+                        </td>
+                      </tr>
+
+                  </tbody>
+                </table>
+                </div>
+                  
+            </div>
+                
+        </div>
+
+
+    </div>
+
+</body>

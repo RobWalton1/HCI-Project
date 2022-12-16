@@ -4,16 +4,21 @@
     <title>Report a problem</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link to css framework-->
     <link rel="stylesheet" href="css/style.css">
+    <!--Link to js framework-->
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
 </head> 
 <body class = "bg-hero min-h-screen bg-cover bg-no-repeat">
+  <div x-data="{ open: false }">
+    
   <div class="hero min-h-screen">
     <div class="hero-content flex-col lg:flex-row  backdrop-blur-2xl ">
       <img src="Estates.jpg" class="max-w-sm rounded-lg shadow-2xl" />
       <div>
-        <h1 class="bold text-5xl font-bold ">Issues in your bedroom, teaching room or around campus?</h1>
-        <p class="py-6">Get in touch and we'll help. For absolute emergencys please call 01603 59 2121</p>
+        <h1 class="bold text-5xl font-bold text-white">Issues in your bedroom, teaching room or around campus?</h1>
+        <p class="py-6 text-white">Get in touch and we'll help. For absolute emergencys please call 01603 59 2121</p>
         <label for="my-modal-6" class="btn">Report a problem</label>
         <input type="checkbox" id="my-modal-6" class="modal-toggle" />
         <div class="modal modal-bottom sm:modal-middle">
@@ -30,12 +35,22 @@
         <h4>Upload a photo of the problem</h4>
         <input type="file" class="file-input w-full max-w-xs" />
         <div class="modal-action">
-          <label for="my-modal-6" class="btn">Send!</label>
+          <label x-on:click="open = ! open" for="my-modal-6" class="btn">Send!</label>
         </div>
         </div>
         </div>
       </div>
     </div>
+  <div x-show.important="open">
+    <div class="toast toast-top toast-end">
+      <div class="alert alert-success">
+        <div>
+          <span>Report sent!</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
   </div>
 
 </body>
